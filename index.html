@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Yuliana Covarrubias - Portfolio</title>
+   <style>
+
+
+       .root {}
+      
+       html{
+           scroll-behavior: smooth;
+       }
+     
+       .container{
+           background-color: white;
+           min-height: 15rem;
+           max-width: 120rem;
+           margin: auto;
+           padding: 0rem 3rem 0rem 3rem;
+           position: relative;
+       }
+
+
+       #pageheader{
+           min-height: 200px;
+           min-width: 200px;
+           background-color: #F9C2BD;
+           padding: 1rem;
+       }
+       #pageheader .container{
+           background-color: var(--color-primary);
+       }
+       #logo{
+           width: 150px;
+           height: 150px;
+           background-color: none;
+           background-image:url(Images/yclogo.png);
+           background-size: cover;
+           position: absolute;
+           left: calc(50% - 75px);
+           border-radius: 50%;
+           transition: all 2s;
+       }
+       #pagenav{
+           background-color: none;
+           min-height: 40px;
+           width: 300px;
+           margin: auto;
+           display: flex;
+           align-items: center;
+           justify-content: space-evenly;
+           position: absolute;
+           bottom: 0px;
+           left: calc(50% - 150px);
+           transition: all 2s;
+       }
+       #pagenav a{color: #FC8C9D;}
+       #pagenav a:hover{color: white}
+       #media{
+           color: white;
+           background-image:url(Images/SAKURA.jpeg);
+           background-size: contain;
+           min-height: 200px;
+           background-color: #B1A979;
+           padding: 1rem;
+           background-size: cover;
+       }
+       #career{
+           color:#FC8C9D;
+           min-height: 200px;
+           background-color: #FCDDE2;
+           padding: 1rem;
+       }
+       #pagecontent{
+           min-height: 200px;
+           background-color: #F9C2BD;
+           padding: 1rem;
+           color: #FC8C9D;
+       }
+       #semester1{
+           min-height: 200px;
+           background-color: #F9C2BD;
+           padding: 1rem;
+       }
+       #semester2{
+           min-height: 200px;
+           background-color: #F9C2BD;
+           padding: 1rem;
+           display: none;
+       }
+       #pagefooter{
+           min-height: 200px;
+           background-color: #F9C2BD;
+           padding: 1rem;
+       }
+       #subfooter{
+           min-height: 200px;
+           background-color: #F9C2BD;
+           padding: 1rem;
+       }
+       #top {
+           width: 30px;
+           height: 30px;
+           background-color: #FC8C9D;
+           border: 1px solid white;
+           padding: 1rem;
+           text-align: center;
+           position: fixed;
+           right: 20px;
+           bottom: 20px;
+           border-radius: 50%;
+           opacity: .5;
+       }
+       #top a{color: white;}
+       /* Media Queries */
+       @media screen and (min-width:320px)
+       {}
+       @media screen and (min-width:488px)
+       {}
+       @media screen and (min-width:768px)
+       {}
+       @media screen and (min-width:1024px)
+       {
+           #logo{left: 25px;}
+           #media{height: 450px;}
+           #pagenav{top: 0px;
+                   right: 0px;
+                   left: auto;
+                   bottom: auto;}
+       }
+       @media screen and (min-width:1200px)
+       {}
+
+
+   </style>
+</head>
+<body>
+   <!-- Named anchor to navigate to the top of the page -->
+   <a name="topanchor"></a>
+   <!-- begin pageheader-->
+   <header id="pageheader">
+       <div class="container">
+       <div id="logo"></div>
+       <nav id="pagenav">
+           <a href="#">Career</a>
+           |
+           <a href="#">Semester 1</a>
+           |
+           <a href="#">Semester 2</a>
+       </nav>
+   </div>
+
+
+   </header>
+   <!-- end pageheader-->
+
+
+   <!-- begin showcase -->
+   <section id="media">
+<img src="Images/_.jpeg" alt="">
+   </section>
+   <!-- end showcase -->
+
+
+    <!-- begin career -->
+       <section id="career">
+           <div class="container">
+               <a name="career"></a>
+               <h2>Career</h2>
+               <ul>
+                   <li>Letter of Introduction</li>
+                   <li>Resume</li>
+                   <li>References</li>
+                   <li>Job Application</li>
+                   <li>Career Plan</li>
+                   <li>Work Samples</li>
+                   <li>Certficates</li>
+               </ul>
+           </div>
+       </section>
+       <!-- end career -->
+
+
+
+
+   <!-- begin pagecontent -->
+   <main id="pagecontent">
+       <div class="container">
+           <h2>Introduction</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla inventore, maxime recusandae eaque nostrum numquam impedit quae, accusantium nisi doloribus, laborum voluptatum dolore exercitationem quasi. Quam doloremque voluptate, quas magni ducimus exercitationem nesciunt sunt tenetur nihil molestias ut voluptas eos sit. Iure ullam repellendus deleniti voluptate blanditiis nam cupiditate quos, officia deserunt nulla incidunt at, maiores dolorum? Iusto illo quam, deleniti voluptatum eaque magni soluta ducimus corporis. Incidunt porro aut molestiae harum error molestias, amet, dignissimos quae repellat ex quaerat quidem labore tenetur minus vitae consequatur eaque veniam eos numquam!</p>
+       </div>
+       </main>
+       <!-- end pagecontent -->
+
+
+   <!-- begin semester1 -->
+   <section id="semester1">
+       <div class="container">
+           <a name="semester1"></a>
+           <h2>Semester1</h2>
+           <ul>
+               <li>A001</li>
+               <li>A002</li>
+               <li>A003</li>
+               <li>A004</li>
+           </ul>
+       </div>
+   </section>
+   <!-- end semester1 -->
+
+
+     <!-- begin semester2 -->
+     <section id="semester2">
+       <div class="container">
+           <a name="semester2"></a>
+           <h2>Semester2</h2>
+           <ul>
+               <li>A001</li>
+               <li>A002</li>
+               <li>A003</li>
+               <li>A004</li>
+           </ul>
+       </div>
+   </section>
+   <!-- end semester2 -->
+
+
+   <!-- begin pagefooter -->
+   <footer id="pagefooter">
+       Pagefooter
+       <div class="containers"></div>
+   </footer>
+   <!-- end pagefooter -->
+
+
+   <!-- begin subfooter -->
+   <footer id="subfooter">
+       <div class="containers"><h2>Pagefooter</h2></div>
+   </footer>
+   <!-- end subfooter -->
+    <div id="top">
+       <a href="#topanchor">Top</a>
+    </div>
+</body>
+</html>
