@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Arc Fill</title>
+</head>
+<body>
+    <h1>Canvas Arc Fill</h1>
+    <canvas id="canvasone"></canvas>
+    <script>
+        // Create canvas
+        const canvasOne = window.document.querySelector('#canvasone');
+        const ctx = canvasOne.getContext('2d');
+    
+        // Configure Canvas
+        canvasOne.width = 800;
+        canvasOne.height = 400;
+        canvasOne.style.border = '1px solid hotpink';
+        
+        // Draw Circle
+        ctx.strokeStyle = 'hotpink';
+        ctx.fillStyle = 'pink';
+        ctx.lineWidth = 10;
+
+        ctx.beginPath();
+        ctx.arc(400, 200, 75, 0, Math.PI * 2, false);
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>
