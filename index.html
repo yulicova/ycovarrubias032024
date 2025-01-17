@@ -56,50 +56,52 @@
            left: calc(50% - 150px);
            transition: all 2s;
        }
-       #pagenav a{color: #FC8C9D;}
-       #pagenav a:hover{color: white}
+       #pagenav a{color: white;}
+       #pagenav a:hover{color: rgb(90, 128, 104)}
        #media{
            color: white;
-           background-image:url(Images/SAKURA.jpeg);
+           background-image:url(Images/cherries.jpg);
            background-size: contain;
            min-height: 200px;
-           background-color: #B1A979;
+           background-color: none;
            padding: 1rem;
            background-size: cover;
        }
        #career{
-           color:#FC8C9D;
            min-height: 200px;
            background-color: #FCDDE2;
            padding: 1rem;
        }
        #pagecontent{
            min-height: 200px;
-           background-color: #F9C2BD;
+           background-color: #FCDDE2;
            padding: 1rem;
-           color: #FC8C9D;
        }
        #semester1{
            min-height: 200px;
-           background-color: #F9C2BD;
+           background-color: #FCDDE2;
            padding: 1rem;
        }
        #semester2{
            min-height: 200px;
-           background-color: #F9C2BD;
+           background-color: #FCDDE2;
            padding: 1rem;
            display: none;
        }
        #pagefooter{
            min-height: 200px;
-           background-color: #F9C2BD;
+           background-color: #FCDDE2;
            padding: 1rem;
        }
        #subfooter{
            min-height: 200px;
-           background-color: #F9C2BD;
+           background-color: #FCDDE2;
            padding: 1rem;
        }
+
+       #subfooter .container {background-color: var(--color-tertiary);
+                color: white;}
+        .footerlinks{display: none;}
        #top {
            width: 30px;
            height: 30px;
@@ -189,7 +191,7 @@
    <main id="pagecontent">
        <div class="container">
            <h2>Introduction</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla inventore, maxime recusandae eaque nostrum numquam impedit quae, accusantium nisi doloribus, laborum voluptatum dolore exercitationem quasi. Quam doloremque voluptate, quas magni ducimus exercitationem nesciunt sunt tenetur nihil molestias ut voluptas eos sit. Iure ullam repellendus deleniti voluptate blanditiis nam cupiditate quos, officia deserunt nulla incidunt at, maiores dolorum? Iusto illo quam, deleniti voluptatum eaque magni soluta ducimus corporis. Incidunt porro aut molestiae harum error molestias, amet, dignissimos quae repellat ex quaerat quidem labore tenetur minus vitae consequatur eaque veniam eos numquam!</p>
+           <p>My name is Yuli and this is my third year in this class, I decided I wanted to complete this pathway after I really enjoyed the last two classes. I have learned a lot through coding and it is really fun to be able to make stuff with code. My favorite thing about this class is that I get to personalize what I make. Learning about coding has been a great experience, it something I hope to incorporate into my future. I wish to become more advanced throughout the year and create many cool stuff. </p>
        </div>
        </main>
        <!-- end pagecontent -->
@@ -229,15 +231,36 @@
 
    <!-- begin pagefooter -->
    <footer id="pagefooter">
-       Pagefooter
-       <div class="containers"></div>
+       <div class="container">
+        <a href="https://classroom.google.com" target="new">classroom</a>
+        <a href="https://classroom.google.com" target="new">classroom</a>
+        <a href="https://classroom.google.com" target="new">classroom</a>
+       </div>
    </footer>
    <!-- end pagefooter -->
 
 
    <!-- begin subfooter -->
    <footer id="subfooter">
-       <div class="containers"><h2>Pagefooter</h2></div>
+       <div class="container">
+        <!-- <h2>Pagefooter</h2> -->
+        <div class="quote">
+            <h3>Final Thoughts</h3>
+            <blockquote>
+                I love McChickens.
+            </blockquote>
+            <p>-Yuli</p>
+        </div>
+
+        <div class="footerlinks">
+            <h3>Links</h3>
+            <ul>
+                <li>Career</li>
+                <li>Semester1</li>
+                <!-- <li>Semester2</li> -->
+            </ul>
+        </div>
+       </div>
    </footer>
    <!-- end subfooter -->
     <div id="top">
