@@ -1,270 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Yuliana Covarrubias - Portfolio</title>
-   <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuliana Covarrubias - Portfolio</title>
+<style>
+    .root {}
+    html{scroll-behavior: smooth;}
+    .container{
+        background-color: white;
+        width: 90%;
+        min-height: 12rem;
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0rem 3rem 0rem 3rem;
+        position: relative;
+    }
+    #pageheader{
+        /* min-width: 200px; */
+        background-color: #F9C2BD;
+        padding: 1rem;
+    }
+    #pageheader .container{
+        background-color: var(--color-primary);
+    }
+    #logo{
+        width: 150px;
+        height: 150px;
+        background-color: none;
+        background-image:url(Images/yclogo.png);
+        background-size: cover;
+        position: absolute;
+        left: calc(50% - 75px);
+        border-radius: 50%;
+        transition: all 2s;
+    }
+    #pagenav{
+        background-color: none;
+        min-height: 40px;
+        width: 350px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        left: calc(50% - 150px);
+        transition: all 2s;
+    }
+    #pagenav a{color: white;
+        text-decoration: none;}
+    #pagenav a:hover{color: rgb(90, 128, 104)}
+    #media{
+        color: white;
+        background-image:url(Images/cherries.jpg);
+        background-size: contain;
+        min-height: 200px;
+        background-color: none;
+        padding: 1rem;
+        background-size: cover;
+    }
+    #career{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+    }
+    #pagecontent{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+    }
+    #semester1{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+    }
+    #semester2{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+    }
+    #keyassignments{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+    }
+    #pagefooter{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+        text-align: center;
+    }
+    #subfooter{
+        min-height: 200px;
+        background-color: #FCDDE2;
+        padding: 1rem;
+    }
+
+    #subfooter .container 
+        {background-color: var(--color-tertiary);
+        color: red;}
+    /* .footerlinks{display: none;} */
+    #top {
+        width: 30px;
+        height: 30px;
+        background-color: #FC8C9D;
+        border: 1px solid white;
+        padding: 1rem;
+        text-align: center;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 50%;
+        opacity: .5;
+    }
+    #top a{color: white;}
+    /* Media Queries */
+    @media screen and (min-width:320px)
+    {#logo{top: 0px;}}
+        
+    @media screen and (min-width:488px)
+    {
+        #logo{top: 0px;}
+    }
+    @media screen and (min-width:768px)
+    {
+        #logo{top: 120px;}
+        #flexsubfooter{display: flex;
+                    justify-content: space-between;}
+        .footerlinks{display: block;
+                    min-width: 200px;}
+    }
+    @media screen and (min-width:1024px)
+    {
+        #logo{left: 25px;}
+        #media{
+            padding-top: 10rem;
+            height: 350px;}
+        #pagenav{top: 0px;
+            right: 0px;
+            left: auto;
+            bottom: auto;}
+    }
+    @media screen and (min-width:1200px)
+    {}
 
 
-       .root {}
-      
-       html{
-           scroll-behavior: smooth;
-       }
-     
-       .container{
-           background-color: white;
-           min-height: 15rem;
-           max-width: 120rem;
-           margin: auto;
-           padding: 0rem 3rem 0rem 3rem;
-           position: relative;
-       }
-
-
-       #pageheader{
-           min-height: 200px;
-           min-width: 200px;
-           background-color: #F9C2BD;
-           padding: 1rem;
-       }
-       #pageheader .container{
-           background-color: var(--color-primary);
-       }
-       #logo{
-           width: 150px;
-           height: 150px;
-           background-color: none;
-           background-image:url(Images/yclogo.png);
-           background-size: cover;
-           position: absolute;
-           left: calc(50% - 75px);
-           border-radius: 50%;
-           transition: all 2s;
-       }
-       #pagenav{
-           background-color: none;
-           min-height: 40px;
-           width: 300px;
-           margin: auto;
-           display: flex;
-           align-items: center;
-           justify-content: space-evenly;
-           position: absolute;
-           bottom: 0px;
-           left: calc(50% - 150px);
-           transition: all 2s;
-       }
-       #pagenav a{color: white;}
-       #pagenav a:hover{color: rgb(90, 128, 104)}
-       #media{
-           color: white;
-           background-image:url(Images/cherries.jpg);
-           background-size: contain;
-           min-height: 200px;
-           background-color: none;
-           padding: 1rem;
-           background-size: cover;
-       }
-       #career{
-           min-height: 200px;
-           background-color: #FCDDE2;
-           padding: 1rem;
-       }
-       #pagecontent{
-           min-height: 200px;
-           background-color: #FCDDE2;
-           padding: 1rem;
-       }
-       #semester1{
-           min-height: 200px;
-           background-color: #FCDDE2;
-           padding: 1rem;
-       }
-       #semester2{
-           min-height: 200px;
-           background-color: #FCDDE2;
-           padding: 1rem;
-           display: none;
-       }
-       #pagefooter{
-           min-height: 200px;
-           background-color: #FCDDE2;
-           padding: 1rem;
-       }
-       #subfooter{
-           min-height: 200px;
-           background-color: #FCDDE2;
-           padding: 1rem;
-       }
-
-       #subfooter .container {background-color: var(--color-tertiary);
-                color: white;}
-        .footerlinks{display: none;}
-       #top {
-           width: 30px;
-           height: 30px;
-           background-color: #FC8C9D;
-           border: 1px solid white;
-           padding: 1rem;
-           text-align: center;
-           position: fixed;
-           right: 20px;
-           bottom: 20px;
-           border-radius: 50%;
-           opacity: .5;
-       }
-       #top a{color: white;}
-       /* Media Queries */
-       @media screen and (min-width:320px)
-       {}
-       @media screen and (min-width:488px)
-       {}
-       @media screen and (min-width:768px)
-       {}
-       @media screen and (min-width:1024px)
-       {
-           #logo{left: 25px;}
-           #media{height: 450px;}
-           #pagenav{top: 0px;
-                   right: 0px;
-                   left: auto;
-                   bottom: auto;}
-       }
-       @media screen and (min-width:1200px)
-       {}
-
-
-   </style>
+</style>
 </head>
 <body>
-   <!-- Named anchor to navigate to the top of the page -->
-   <a name="topanchor"></a>
-   <!-- begin pageheader-->
-   <header id="pageheader">
-       <div class="container">
-       <div id="logo"></div>
-       <nav id="pagenav">
-           <a href="#">Career</a>
-           |
-           <a href="#">Semester 1</a>
-           |
-           <a href="#">Semester 2</a>
-       </nav>
-   </div>
+<!-- Named anchor to navigate to the top of the page -->
+<a name="topanchor"></a>
+<!-- begin pageheader-->
+<header id="pageheader">
+    <!-- begin container-->
+    <div class="container">
+        <div id="logo"></div>
+        <nav id="pagenav">
+            <a href="#">Career</a>
+            |
+            <a href="#">Semester 1</a>
+            |
+            <a href="#">Semester 2</a>
+            |
+            <a href="#">Key Assignments</a>
+        </nav>
+        </div>
+</header>
+<!-- end pageheader-->
 
+<!-- begin showcase -->
+<section id="media">
+        <img src="Images/_.jpeg" alt="">
+</section>
+<!-- end showcase -->
 
-   </header>
-   <!-- end pageheader-->
+<!-- begin career -->
+<section id="career">
+    <div class="container">
+        <a name="career"></a>
+        <h2>Career</h2>
+        <ul>
+            <li>Letter of Introduction</li>
+            <li>Resume</li>
+            <li>References</li>
+            <li>Job Application</li>                <li>Career Plan</li>
+            <li>Work Samples</li>
+            <li>Certficates</li>
+        </ul>
+    </div>
+</section>
+<!-- end career -->
 
+<!-- begin pagecontent -->
+<main id="pagecontent">
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>My name is Yuli and this is my third year in this class, I decided I wanted to complete this pathway after I really enjoyed the last two classes. I have learned a lot through coding and it is really fun to be able to make stuff with code. My favorite thing about this class is that I get to personalize what I make. Learning about coding has been a great experience, it something I hope to incorporate into my future. I wish to become more advanced throughout the year and create many cool stuff. </p>
+    </div>
+</main>
+<!-- end pagecontent -->
 
-   <!-- begin showcase -->
-   <section id="media">
-<img src="Images/_.jpeg" alt="">
-   </section>
-   <!-- end showcase -->
+<!-- begin semester1 -->
+<section id="semester1">
+    <div class="container">
+        <a name="semester1"></a>
+        <h2>Semester1</h2>
+        <ul>
+            <li>A001</li>
+            <li>A002</li>
+            <li>A003</li>
+            <li>A004</li>
+        </ul>
+    </div>
+</section>
+<!-- end semester1 -->
 
+<!-- begin semester2 -->
+<section id="semester2">
+    <div class="container">
+        <a name="semester2"></a>
+        <h2>Semester2</h2>
+        <ul>
+            <li><a href="Projects/paintingappv3.html">Painting App</a></li>
+            <li>Personalized Array</li>
+            <li>A003</li>
+            <li>A004</li>
+        </ul>
+    </div>
+</section>
+<!-- end semester2 -->
 
-    <!-- begin career -->
-       <section id="career">
-           <div class="container">
-               <a name="career"></a>
-               <h2>Career</h2>
-               <ul>
-                   <li>Letter of Introduction</li>
-                   <li>Resume</li>
-                   <li>References</li>
-                   <li>Job Application</li>
-                   <li>Career Plan</li>
-                   <li>Work Samples</li>
-                   <li>Certficates</li>
-               </ul>
-           </div>
-       </section>
-       <!-- end career -->
+<!-- begin keyassignments  -->
+<main id="keyassignments">
+    <div class="container">
+        <a name="keyassignments"></a>
+        <h2>Key Assignments</h2>
+        <p>My name is Yuli and this is my third year in this class, I decided I wanted to complete this pathway after I really enjoyed the last two classes. I have learned a lot through coding and it is really fun to be able to make stuff with code. My favorite thing about this class is that I get to personalize what I make. Learning about coding has been a great experience, it something I hope to incorporate into my future. I wish to become more advanced throughout the year and create many cool stuff.</p>
+    </div>
+</main>
+<!-- end keyassignments -->
 
+<!-- begin pagefooter -->
+<footer id="pagefooter">
+    <div class="container">
+        <a href="https://classroom.google.com" target="new">Classroom</a>
+        <a href="https://coalingahuron.aeries.net" target="new">Aeries</a>
+        <a href="https://login.whccd.edu" target="new">WHCC</a>
+        <a href="https://open.spotify.com" target="new">Spotify</a>
+    </div>
+</footer>
+<!-- end pagefooter -->
 
-
-
-   <!-- begin pagecontent -->
-   <main id="pagecontent">
-       <div class="container">
-           <h2>Introduction</h2>
-           <p>My name is Yuli and this is my third year in this class, I decided I wanted to complete this pathway after I really enjoyed the last two classes. I have learned a lot through coding and it is really fun to be able to make stuff with code. My favorite thing about this class is that I get to personalize what I make. Learning about coding has been a great experience, it something I hope to incorporate into my future. I wish to become more advanced throughout the year and create many cool stuff. </p>
-       </div>
-       </main>
-       <!-- end pagecontent -->
-
-
-   <!-- begin semester1 -->
-   <section id="semester1">
-       <div class="container">
-           <a name="semester1"></a>
-           <h2>Semester1</h2>
-           <ul>
-               <li>A001</li>
-               <li>A002</li>
-               <li>A003</li>
-               <li>A004</li>
-           </ul>
-       </div>
-   </section>
-   <!-- end semester1 -->
-
-
-     <!-- begin semester2 -->
-     <section id="semester2">
-       <div class="container">
-           <a name="semester2"></a>
-           <h2>Semester2</h2>
-           <ul>
-               <li>A001</li>
-               <li>A002</li>
-               <li>A003</li>
-               <li>A004</li>
-           </ul>
-       </div>
-   </section>
-   <!-- end semester2 -->
-
-
-   <!-- begin pagefooter -->
-   <footer id="pagefooter">
-       <div class="container">
-        <a href="https://classroom.google.com" target="new">classroom</a>
-        <a href="https://classroom.google.com" target="new">classroom</a>
-        <a href="https://classroom.google.com" target="new">classroom</a>
-       </div>
-   </footer>
-   <!-- end pagefooter -->
-
-
-   <!-- begin subfooter -->
-   <footer id="subfooter">
-       <div class="container">
+<!-- begin subfooter -->
+<footer id="subfooter">
+    <div class="container">
         <!-- <h2>Pagefooter</h2> -->
-        <div class="quote">
-            <h3>Final Thoughts</h3>
-            <blockquote>
+        <div id="flexsubfooter">
+            <div class="quote">
+                <h3>Final Thoughts</h3>
+                <blockquote>
                 I love McChickens.
-            </blockquote>
-            <p>-Yuli</p>
-        </div>
-
-        <div class="footerlinks">
+                </blockquote>
+                <p>-Yuli</p>
+            </div>
+            <div class="footerlinks">
             <h3>Links</h3>
-            <ul>
-                <li>Career</li>
-                <li>Semester1</li>
-                <!-- <li>Semester2</li> -->
-            </ul>
-        </div>
-       </div>
-   </footer>
-   <!-- end subfooter -->
+                <ul>
+                    <li>Career</li>
+                    <li>Semester 1</li>
+                    <li>Semester 2</li>
+                    <li>Key Assignments</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</footer>
+<!-- end subfooter -->
     <div id="top">
-       <a href="#topanchor">Top</a>
+        <a href="#topanchor">Top</a>
     </div>
 </body>
 </html>
