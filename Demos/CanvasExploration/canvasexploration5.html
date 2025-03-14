@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Exploration 4</title>
+    <title>Canvas Exploration 5</title>
     <style>
         body{background-color: rgb(255, 0, 85);
         color: white;}
@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <h1>Canvas Exploration 4</h1>
+    <h1>Canvas Exploration 5</h1>
     <canvas id="canvas"></canvas>
     <div id="buttonholder">
         <button id="createline">Create Line</button>
@@ -71,10 +71,18 @@
         const btnCreateStar = window.document.querySelector('#createstar');
         btnCreateStar.addEventListener('click', function(){window.alert('Create Star')});
 
-        // Undo
-        const btnUndo = window.document.querySelector('#undodraw');
-         btnUndo.addEventListener('click', function(){window.alert('Undo')});
-         
+        // Clear
+        const btnClear = window.document.querySelector('#clear');
+
+        btnClear.style.backgroundColor = 'purple';
+        btnClear.style.Color = 'white';
+
+
+         btnClear.addEventListener('click', function(){
+            window.alert('Clear');
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+         });
     </script>
 </body>
 </html>

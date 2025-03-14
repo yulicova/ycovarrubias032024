@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Floated Images</title>
+   <style>
+       body{
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: pink;
+       }
+       h1 ,h2, h3 {font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;}
+       #wrapper{
+           width: 80%;
+           max-width:1200px;
+           margin: auto;
+       }
+       main{
+           line-height: 1.7;
+           color: #333;
+           padding: 1rem;
+           border: 1px solid silver;
+           background-color: white;
+       }
+       img.centerimage{
+           max-width: 80%;
+           display: block;
+           margin: auto;
+       }
+       figure.rightimage{
+           max-width: 70%;
+           height: auto;
+           float: right;
+           margin: 1rem;
+       }
+       figure.leftimage{
+           max-width: 70%;
+           height: auto;
+           float: left;
+           margin: 1rem;
+       }
+       main img{
+        max-width: 100%;
+        box-shadow: 2px 2px 2px 2px black;
+       }
+       figure{
+        background-color: none;
+       }
+       figcaption{
+        text-align: center;
+       }
+
+       /* Clear the Floated images */
+       .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+       }
+   </style>
+</head>
+<body>
+   <div id="wrapper">
+       <main class="clearfix">
+        <h1>Floated Images</h1>
+
+        <figure><img class="centerimage" src="Images/mainkeyboard.png" alt="A Computer Keyboard Logitech A5000">
+            <figcaption>Logitech Keyboard A5000</figcaption>
+        </figure>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis culpa placeat quo. Ut, tempora neque natus vel quae deleniti magni, odio corrupti recusandae vitae consequuntur rerum voluptate eveniet. Porro, culpa et? Delectus dolorum, excepturi cum veritatis, velit, consequatur corporis dolores qui enim cupiditate provident adipisci? Repellendus eaque perspiciatis saepe qui eum suscipit, quod reiciendis nobis laudantium tenetur laboriosam maiores.</p>
+       
+        <figure class="rightimage">
+            <img src="Images/mainimage1code.png" alt="A screen with">
+            <figcaption>Code on Linux</figcaption>
+        </figure>
+ 
+ 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis culpa placeat quo. Ut, tempora neque natus vel quae deleniti magni, odio corrupti recusandae vitae consequuntur rerum voluptate eveniet. Porro, culpa et? Delectus dolorum, excepturi cum veritatis, velit, consequatur corporis dolores qui enim cupiditate provident adipisci? Repellendus eaque perspiciatis saepe qui eum suscipit, quod reiciendis nobis laudantium tenetur laboriosam maiores.</p>   
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis culpa placeat quo. Ut, tempora neque natus vel quae deleniti magni, odio corrupti recusandae vitae consequuntur rerum voluptate eveniet. Porro, culpa et? Delectus dolorum, excepturi cum veritatis, velit, consequatur corporis dolores qui enim cupiditate provident adipisci? Repellendus eaque perspiciatis saepe qui eum suscipit, quod reiciendis nobis laudantium tenetur laboriosam maiores.</p>   
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis culpa placeat quo. Ut, tempora neque natus vel quae deleniti magni, odio corrupti recusandae vitae consequuntur rerum voluptate eveniet. Porro, culpa et? Delectus dolorum, excepturi cum veritatis, velit, consequatur corporis dolores qui enim cupiditate provident adipisci? Repellendus eaque perspiciatis saepe qui eum suscipit, quod reiciendis nobis laudantium tenetur laboriosam maiores.</p>  
+       
+       <figure class="leftimage">
+            <img  src="Images/mainimage2code.png" alt="A screen with code">
+            <figcaption>Code on Windows</figcaption>
+        </figure>
+ 
+ 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis culpa placeat quo. Ut, tempora neque natus vel quae deleniti magni, odio corrupti recusandae vitae consequuntur rerum voluptate eveniet. Porro, culpa et? Delectus dolorum, excepturi cum veritatis, velit, consequatur corporis dolores qui enim cupiditate provident adipisci? Repellendus eaque perspiciatis saepe qui eum suscipit, quod reiciendis nobis laudantium tenetur laboriosam maiores.</p>   
+        </main>
+    </div>
+   
+ </body>
+ </html> 

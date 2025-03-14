@@ -9,7 +9,7 @@
     html{scroll-behavior: smooth;}
     .container{
         background-color: white;
-        width: 90%;
+        width: 80%;
         min-height: 12rem;
         max-width: 120rem;
         margin: 0 auto;
@@ -18,8 +18,9 @@
     }
     #pageheader{
         /* min-width: 200px; */
-        background-color: #F9C2BD;
+        background-color: #1A3530;
         padding: 1rem;
+        color: white;
     }
     #pageheader .container{
         background-color: var(--color-primary);
@@ -27,8 +28,8 @@
     #logo{
         width: 150px;
         height: 150px;
-        background-color: none;
-        background-image:url(Images/yclogo.png);
+        background-color: #D5DDC6;
+        background-image:url(Images/yclogo2.png);
         background-size: cover;
         position: absolute;
         left: calc(50% - 75px);
@@ -50,57 +51,78 @@
     }
     #pagenav a{color: white;
         text-decoration: none;}
-    #pagenav a:hover{color: rgb(90, 128, 104)}
+    #pagenav a:hover{text-decoration: underline;}
     #media{
+        background-color: #D5DDC6;
         color: white;
-        background-image:url(Images/cherries.jpg);
-        background-size: contain;
-        min-height: 200px;
+        background-image:url(Images/trees.jpeg);
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        /* min-height: 200px; */
         background-color: none;
         padding: 1rem;
-        background-size: cover;
     }
     #career{
         min-height: 200px;
-        background-color: #FCDDE2;
+        background-color: #D5DDC6;
         padding: 1rem;
     }
     #pagecontent{
         min-height: 200px;
-        background-color: #FCDDE2;
+        background-color: #5B6F64;
         padding: 1rem;
     }
     #semester1{
         min-height: 200px;
-        background-color: #FCDDE2;
+        background-color: #D5DDC6;
         padding: 1rem;
     }
     #semester2{
         min-height: 200px;
-        background-color: #FCDDE2;
+        background-color: #5B6F64;
         padding: 1rem;
+        color: #1A3530;
     }
+    #semester2 a{color: #1A3530;
+    text-decoration: none;}
+    #semester2 a:hover{text-decoration: underline;}
+    h2, p, ul{padding: 1rem;}
     #keyassignments{
         min-height: 200px;
-        background-color: #FCDDE2;
+        background-color: #D5DDC6;
         padding: 1rem;
     }
     #pagefooter{
-        min-height: 200px;
-        background-color: #FCDDE2;
+        min-height: 50px;
+        background-color: #5B6F64;
         padding: 1rem;
         text-align: center;
     }
+    #pagefooter .container
+    {   background-color: white;
+        min-height: 100px;
+        margin: auto;
+    }
+    #pagefooter .container a{
+        padding: 1rem;
+        color: #1A3530;
+        text-decoration: none;
+        margin: auto;
+    }
+    #pagefooter a:hover{text-decoration: underline;}
     #subfooter{
         min-height: 200px;
-        background-color: #FCDDE2;
+        background-color: #D5DDC6;
         padding: 1rem;
     }
 
-    #subfooter .container 
-        {background-color: var(--color-tertiary);
-        color: red;}
-    /* .footerlinks{display: none;} */
+    #subfooter .container {color: #1A3530;
+        background-color: var(--color-tertiary);}
+    #footerlinks {
+				/* display: none; */
+				min-width: 200px;
+			}
     #top {
         width: 30px;
         height: 30px;
@@ -115,22 +137,26 @@
         opacity: .5;
     }
     #top a{color: white;}
+
     /* Media Queries */
+
     @media screen and (min-width:320px)
     {#logo{top: 0px;}}
         
     @media screen and (min-width:488px)
-    {
-        #logo{top: 0px;}
-    }
+    {#logo{top: 0px;}}
+
     @media screen and (min-width:768px)
     {
         #logo{top: 120px;}
-        #flexsubfooter{display: flex;
-                    justify-content: space-between;}
-        .footerlinks{display: block;
-                    min-width: 200px;}
+        #flexsubfooter{
+            display: flex;
+            justify-content: space-between;}
+        .footerlinks{
+            display: block;
+            min-width: 200px;}
     }
+
     @media screen and (min-width:1024px)
     {
         #logo{left: 25px;}
@@ -142,10 +168,9 @@
             left: auto;
             bottom: auto;}
     }
+
     @media screen and (min-width:1200px)
     {}
-
-
 </style>
 </head>
 <body>
@@ -165,7 +190,7 @@
             |
             <a href="#">Key Assignments</a>
         </nav>
-        </div>
+    </div>
 </header>
 <!-- end pageheader-->
 
@@ -184,7 +209,8 @@
             <li>Letter of Introduction</li>
             <li>Resume</li>
             <li>References</li>
-            <li>Job Application</li>                <li>Career Plan</li>
+            <li>Job Application</li>
+            <li>Career Plan</li>
             <li>Work Samples</li>
             <li>Certficates</li>
         </ul>
@@ -196,7 +222,7 @@
 <main id="pagecontent">
     <div class="container">
         <h2>Introduction</h2>
-        <p>My name is Yuli and this is my third year in this class, I decided I wanted to complete this pathway after I really enjoyed the last two classes. I have learned a lot through coding and it is really fun to be able to make stuff with code. My favorite thing about this class is that I get to personalize what I make. Learning about coding has been a great experience, it something I hope to incorporate into my future. I wish to become more advanced throughout the year and create many cool stuff. </p>
+        <p>My name is Yuli and this is my third year in this class, I decided I wanted to complete this pathway after I really enjoyed the last two classes. I have learned a lot through coding and it is really fun to be able to make stuff with code. My favorite thing about this class is that I get to personalize what I make. Learning about coding has been a great experience, it's something I hope to incorporate into my future. I wish to become more advanced throughout the year and create many cool stuff. </p>
     </div>
 </main>
 <!-- end pagecontent -->
@@ -207,10 +233,11 @@
         <a name="semester1"></a>
         <h2>Semester1</h2>
         <ul>
-            <li>A001</li>
-            <li>A002</li>
-            <li>A003</li>
-            <li>A004</li>
+            <li>PrismJS2</li>
+            <li>PrismJS3</li>
+            <li>Canvas Smiley Face</li>
+            <li>Canvas Drawing 1</li>
+            <li>Canvas Drawing 2</li>
         </ul>
     </div>
 </section>
@@ -222,10 +249,15 @@
         <a name="semester2"></a>
         <h2>Semester2</h2>
         <ul>
-            <li><a href="Projects/paintingappv3.html">Painting App</a></li>
+            <li><a href="Projects/paintingappv4.html">Painting App</a></li>
             <li><a href="Demos/Arrays/personlizedarray.html">Personalized Array</a></li>
-            <li>A003</li>
-            <li>A004</li>
+            <li><a href="Demos/2025/index.html">Responsive CSS Grid Areas</a></li>
+            <li><a href="Activites/GridAreasOnYourOwn1/gridareasonyourown1.html">Grid Areas - On Your Own 1</a></li>
+            <li><a href="Activites/GridAreasOnYourOwn2/gridareasonyourown2.html">Grid Areas - On Your Own 2</a></li>
+            <li><a href="CareerSkillsChallenge/4121/index.html">Pet Adoption Website</a></li>
+            <li><a href="Activites/FloatedImages/floatedimages.html">Floated Images and Centered Images</a></li>
+            <li><a href="CareerSkillsChallenge/FlexboxList/flexboxlist.html">Flexbox List</a></li>
+            <li><a href="CareerSkillsChallenge/07/index.html">Grid Layout</a></li>
         </ul>
     </div>
 </section>
@@ -260,9 +292,9 @@
             <div class="quote">
                 <h3>Final Thoughts</h3>
                 <blockquote>
-                I love McChickens.
+                "Life is like riding a bicycle. To keep your balance, you must keep moving."  
                 </blockquote>
-                <p>-Yuli</p>
+                <p>- Albert Einstein</p>
             </div>
             <div class="footerlinks">
             <h3>Links</h3>

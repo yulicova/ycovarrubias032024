@@ -1,0 +1,26 @@
+body{
+            color: #333333;
+        }
+        h1{ font-family: "Roboto Slab", serif;
+            font-size: 3rem;
+            text-align: center;}
+        h2{  font-family: "Roboto Slab", serif;}
+        p{
+            line-height: 1.7;
+            font-family: "Roboto", sans-serif;
+        }
+        nav#topnav{background-color: coral;
+        padding: 1rem;}
+        nav#topnav ul{
+            background-color: tomato;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        nav#topnav ul li a{
+            color: white;
+            text-transform: uppercase;
+        }
