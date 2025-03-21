@@ -1,0 +1,242 @@
+
+.root {}
+html{scroll-behavior: smooth;}
+.container{
+    background-color: white;
+    width: 80%;
+    min-height: 12rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0rem 3rem 0rem 3rem;
+    position: relative;
+}
+#pageheader{
+    /* min-width: 200px; */
+    background-color: #1A3530;
+    padding: 1rem;
+    color: white;
+}
+#pageheader .container{
+    background-color: var(--color-primary);
+}
+#logo{
+    width: 150px;
+    height: 150px;
+    background-color: #D5DDC6;
+    background-image:url(Images/yclogo2.png);
+    background-size: cover;
+    position: absolute;
+    left: calc(50% - 75px);
+    border-radius: 50%;
+    transition: all 2s;
+    z-index: 1;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes grow
+    {
+        from{transform: scale(.8);}
+        to{transform: scale(1);}
+    }
+#pagenav{
+    background-color: none;
+    min-height: 40px;
+    width: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 150px);
+    transition: all 2s;
+}
+#pagenav a{color: white;
+    text-decoration: none;}
+#pagenav a:hover{text-decoration: underline;}
+
+#topnav{
+    background-color: #5B6F64;
+    min-height: 75px;
+    padding: 1rem;
+    text-align: center;
+    color: #1A3530;
+}
+#topnav a{
+    color: #1A3530;
+    text-decoration: none;
+    padding: 1rem;
+} 
+#topnav a:hover{
+    text-decoration: underline;
+} 
+#topnav .container
+{   background-color: white;
+    min-height: 2rem;
+    padding: 1rem;
+}
+#media{
+    background-color: #D5DDC6;
+    color: white;
+    background-image:url(Images/trees.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    /* min-height: 200px; */
+    background-color: none;
+    padding: 1rem;
+}
+#career{
+    min-height: 200px;
+    background-color: #D5DDC6;
+    padding: 1rem;
+    color: #1A3530;
+}
+#career a{color:#1A3530;
+text-decoration: none;}
+#career a:hover{
+    text-decoration: underline;
+}
+#pagecontent{
+    min-height: 200px;
+    background-color: #5B6F64;
+    color: #1A3530;
+    padding: 1rem;
+    position: relative;
+}
+#plant{
+    height: 150px;
+    width: 150px;
+    background-image: url(Images/plant.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes jump {
+        from{transform:translate(0px, 0px);}
+        to{transform:translate(0px, -50px);}
+    }
+#semester1{
+    min-height: 200px;
+    background-color: #D5DDC6;
+    padding: 1rem;
+}
+#semester2{
+    min-height: 200px;
+    background-color: #5B6F64;
+    padding: 1rem;
+    color: #1A3530;
+}
+#semester2 a{color: #1A3530;
+text-decoration: none;}
+#semester2 a:hover{text-decoration: underline;}
+h2, p, ul{padding: 1rem;}
+#keyassignments{
+    min-height: 200px;
+    background-color: #D5DDC6;
+    color: #1A3530;
+    padding: 1rem;
+    position: relative;
+}
+#flower{
+    height: 150px;
+    width: 150px;
+    background-image: url(Images/greenflower.png);
+    background-size: cover;
+    background-color: none;
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+    right: 20px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes rotate
+    {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(180deg)}
+    }
+#pagefooter{
+    background-color: #5B6F64;
+    min-height: 50px;
+    padding: 1rem;
+    text-align: center;   
+}
+#pagefooter .container
+{   background-color: white;
+    min-height: 100px;
+}
+#pagefooter .container a{
+    color: #1A3530;
+    padding: 1rem;
+    text-decoration: none;
+}
+#pagefooter a:hover{text-decoration: underline;}
+#subfooter{
+    min-height: 200px;
+    background-color: #D5DDC6;
+    padding: 1rem;
+}
+#subfooter .container {color: #1A3530;
+    background-color: var(--color-tertiary);}
+#footerlinks {
+            /* display: none; */
+            min-width: 200px;
+        }
+#top {
+    width: 30px;
+    height: 30px;
+    background-color: #1A3530;
+    border: 1px solid #0c1916;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    opacity: .5;
+}
+#top a{color: white;}
+
+/* Media Queries */
+
+@media screen and (min-width:320px)
+{#logo{top: 0px;}}
+    
+@media screen and (min-width:488px)
+{#logo{top: 0px;}}
+
+@media screen and (min-width:768px)
+{
+    #logo{top: 120px;}
+    #flexsubfooter{
+        display: flex;
+        justify-content: space-between;}
+    .footerlinks{
+        display: block;
+        min-width: 200px;}
+}
+
+@media screen and (min-width:1024px)
+{
+    #logo{left: 25px;}
+    #media{
+        padding-top: 10rem;
+        height: 350px;}
+    #pagenav{top: 0px;
+        right: 0px;
+        left: auto;
+        bottom: auto;}
+}
+
+@media screen and (min-width:1200px)
+{}
