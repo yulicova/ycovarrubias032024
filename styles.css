@@ -173,11 +173,11 @@ h2, p, ul{padding: 1rem;}
 }
 #pagefooter .container
 {   background-color: white;
-    min-height: 100px;
+    min-height: 10px;
+    padding: 1rem;
 }
 #pagefooter .container a{
     color: #1A3530;
-    padding: 1rem;
     text-decoration: none;
 }
 #pagefooter a:hover{text-decoration: underline;}
@@ -188,6 +188,14 @@ h2, p, ul{padding: 1rem;}
 }
 #subfooter .container {color: #1A3530;
     background-color: var(--color-tertiary);}
+#subfooter .footerlinks ul li a{
+    color: #1A3530;
+    text-decoration: none;
+}
+#subfooter .footerlinks ul li a:hover{
+    text-decoration: underline;
+}
+
 #footerlinks {
             /* display: none; */
             min-width: 200px;
