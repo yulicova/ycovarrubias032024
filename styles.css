@@ -89,6 +89,7 @@ html{scroll-behavior: smooth;}
     padding: 1rem;
 }
 #career{
+    font-family: "Playfair Display SC", serif;
     min-height: 200px;
     background-color: #D5DDC6;
     padding: 1rem;
@@ -100,6 +101,7 @@ text-decoration: none;}
     text-decoration: underline;
 }
 #pagecontent{
+    font-family: "Playfair Display SC", serif;
     min-height: 200px;
     background-color: #5B6F64;
     color: #1A3530;
@@ -124,11 +126,13 @@ text-decoration: none;}
         to{transform:translate(0px, -50px);}
     }
 #semester1{
+    font-family: "Playfair Display SC", serif;
     min-height: 200px;
     background-color: #D5DDC6;
     padding: 1rem;
 }
 #semester2{
+    font-family: "Playfair Display SC", serif;
     min-height: 200px;
     background-color: #5B6F64;
     padding: 1rem;
@@ -169,7 +173,8 @@ h2, p, ul{padding: 1rem;}
     background-color: #5B6F64;
     min-height: 50px;
     padding: 1rem;
-    text-align: center;   
+    text-align: center; 
+    font-family: "Playfair Display SC", serif;  
 }
 #pagefooter .container
 {   background-color: white;
@@ -191,6 +196,7 @@ h2, p, ul{padding: 1rem;}
 #subfooter .footerlinks ul li a{
     color: #1A3530;
     text-decoration: none;
+    font-family: "Playfair Display SC", serif;
 }
 #subfooter .footerlinks ul li a:hover{
     text-decoration: underline;
