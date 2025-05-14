@@ -116,7 +116,7 @@ outline-color: crimson;
         <input type="radio" id="radjavascript" value="javascript" name="language"><label
         for="radjavascript">JavaScript</label>
 
-
+        <br>
         <button id="saveradiobutton">Save Radio to Local Storage</button>
         <button id="loadradiobutton">Load Radio from Local Storage</button>
     </fieldset>
@@ -237,21 +237,19 @@ outline-color: crimson;
 
 
         if(savedLanguage !== null)
-    {
-        let radioToCheck = document.querySelector(`input[name="language"][value="${savedLanguage}"]`);
-        if(radioToCheck!==null)
+        {
+            let radioToCheck = document.querySelector(`input[name="language"][value="${savedLanguage}"]`);
+            if(radioToCheck!==null)
             {
             radioToCheck.checked = true;
             paragraphOutput.textContent = `You selected: ${savedLanguage}`;
             }
-        else{
-        paragraphOutput.textContent = 'Saved language not found.'
+            else
+            {paragraphOutput.textContent = 'Saved language not found.'}
         }
-    }
-    else
-    {paragraphOutput.textContent = "No language found in localStorage"}
-
-    });
+        else
+        {paragraphOutput.textContent = "No language found in localStorage"}
+        });
 
 
    // Select section
