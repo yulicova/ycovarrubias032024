@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Documents</title>
+    <style>
+        body{background-color: rgb(255, 222, 228);}
+        h1{background-color: white;
+        padding: 1rem;
+    border: 1px solid black;
+text-align: center;}
+        iframe{
+            width: 100%;
+            max-width: 1200px;
+            display: block;
+            margin: auto;
+            margin-bottom: 2rem;
+            border: 2px solid black;
+            aspect-ratio: 16/9;
+            /* aspect-ratio: 4/3; for certificates*/
+        }
+    </style>
 </head>
 <body>
     <h1>PDF Documents</h1>
-    <h2>English10 Essay</h2>
-    <iframe src="https://chagoyan.com/" frameborder="0"></iframe>
+    <h2>PDF Document 1</h2>
+    <iframe src="PDFDocument1.pdf" frameborder="0"></iframe>
+    <h2>PDF Document 2</h2>
+    <iframe src="PDFDocument2.pdf" frameborder="0"></iframe>
+
+    <script>
+        // Resize PDF based on browser resize event
+
+        window.addEventListener('resize', function(){
+            window.location.reload();
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+body{
+    background-color: none;
+    background-image: url(Images/paws.jpeg)
+}
+#logo{
+    background-image: url(Images/logo2.jpg);
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    background-color: lightyellow;
+    position: absolute;
+    top: 10px;
+    left: 530px;
+    border-radius: 50%;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slide
+{
+    from{transform:translate(0px, 0px);}
+    to{transform:translate(-50px, 0px);}
+}
+#container{
+    background-color: rgb(73, 45, 6);
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    padding-top: 11rem;
+    padding-bottom: 1rem;
+    border-radius: 5%;
+    position: relative;
+}
+#wrapper{
+    width: 80%;
+    margin: auto;
+    background-color: none;
+}
+nav{
+    background-color: #734C29;
+    padding: 1rem;
+}
+nav ul{
+    background-color: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 17px;
+}
+nav ul li{font-family: "Gravitas One", serif;}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{text-decoration: underline;}
+nav ul li{transition: all 1s;}
+nav ul li:hover{
+    transform:rotate(-15deg);
+}
+main{background-color: #A68160;
+color: rgb(73, 45, 6);}
+main h1{
+    font-family: "Gravitas One", serif;
+    padding: 1rem;
+    text-align: center;}
+p{
+    font-family: "Quicksand", sans-serif;
+    padding: 1rem;
+    line-height: 2;}
+#media {
+    background-color: #F2D0A7;
+    padding: 1rem;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+card{
+    border-radius: 25px;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+#media card {
+    background-color: none;
+    background-position: center center;
+    background-size: cover;
+    max-width: 300px;
+    aspect-ratio: 4/3;
+    border: 3px solid #BF7449;
+    transition: all 1s;
+}
+#media card:hover {
+    transform: scale(.9);
+}
+#one{background-image: url(Images/hamster1.jpg);}
+#two{background-image: url(Images/bunny.jpg);}
+#three{background-image: url(Images/adopt_puppy.jpg);}
+#four{background-image: url(Images/kitten.jpg);}
+footer {
+    background-color: #B78455;
+    padding: .5rem;
+    min-height: 50px;
+    text-align: center;
+    color: black;
+}

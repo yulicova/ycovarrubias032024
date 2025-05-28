@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 
 <style>
-
-
+iframe{
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    }
 </style>
 </head>
 <body>
@@ -41,9 +47,17 @@
 <main id="pagecontent">
     <div class="container">
         <h2>Work Samples</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, laborum debitis qui quae laboriosam aliquid. Modi, odio suscipit? Omnis molestiae obcaecati, cum voluptates incidunt nemo, odit tempore quas excepturi deleniti asperiores? A unde repellat delectus possimus quasi repellendus hic exercitationem consequatur laudantium, debitis reprehenderit rem sed asperiores ducimus est odio deleniti doloremque accusantium mollitia dolore, quis deserunt quae. Blanditiis facilis praesentium, et, dolores nesciunt exercitationem error sapiente quod, dignissimos aliquid sint inventore nulla quis ex corporis? Cumque veniam asperiores consequuntur, odit sapiente tenetur maiores quae? Quas repellendus quis minus. Distinctio dolorum necessitatibus quos a sint ipsam sequi officiis officia labore. </p>
+    <h2>AP Biology Meiosis Book</h2>
+    <iframe src="WorkSamples/AP Biology Meiosis Book.pdf" frameborder="0"></iframe>
+    <h2>AP Lang Greatest Of All Time Argument Poster</h2>
+    <iframe src="WorkSamples/AP Language - Greatest Of All Time Argument Poster.jpg" frameborder="0"></iframe>
+    <h2>AP Spanish 'Mis Opciones' Presentation</h2>
+    <iframe src="WorkSamples/AP Spanish - Mis Opciones Presentation (1).pdf" frameborder="0"></iframe>
+    <h2>English 12 Juvenile Justice Essay</h2>
+    <iframe src="WorkSamples/English 12 Juvenile Justice Essay.pdf" frameborder="0"></iframe>
+    <h2>Physics Climate Change Project</h2>
+    <iframe src="WorkSamples/Physics - Climate Change Project  (1).pdf" frameborder="0"></iframe>
     </div>
-    
 </main>
 <!-- end pagecontent -->
 
@@ -86,5 +100,12 @@
     <div id="top">
         <a href="#topanchor">Top</a>
     </div>
+
+    <script>
+        window.addEventListener('resize', refresh);
+        function refresh{
+            window.location.reload();
+        }
+    </script>
 </body>
 </html>

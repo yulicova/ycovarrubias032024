@@ -37,7 +37,23 @@
         {
             //alert(selStylesheet.value);
             styleLink.href = selStylesheet.value; 
+
+            // save to local storage
+            localStorage.setItem('selectedStylesheet1986', selStylesheet.value);
         }
+        window.addEventListener('load', function(){
+            let savedStylesheet = localStorage.getItem('selectedStylesheet1986');
+
+           // alert(savedStylesheet);
+
+            if(savedStylesheet !==null)
+            {
+                // Link to the saved stylesheet
+                styleLink.href = savedStylesheet;
+                // Match the dropbox box (select) to saved stylesheet
+                selStylesheet.value = savedStylesheet;
+            }
+        });
     </script>
 </body>
 </html>
